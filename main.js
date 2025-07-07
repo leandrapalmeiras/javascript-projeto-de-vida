@@ -1,11 +1,13 @@
-const botoest1= document.querySelectorAll(".bottao");
+const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
 
-for(let = 0; i< botoest1.length; i++){
-    botoes(1).onclick = function(){
-        for(let ) = 0; 1 < botoes: length; i++) {
-            botoes [i]. onclick + function(){
-                for (let j= 0; 1 < botoes.length; j++)
-            }
+for(let i = 0; i< botoes.length; i++){
+    botoes[i].onclick = function(){
+        for(let j = 0; j < botoes.length; j++){
+            botoes[j].classList.remove("ativo");
+            textos[j].classList.remove("ativo");
         }
+        botoes[i].classList.add("ativo");
+        textos[i].classList.add("ativo");
     }
 }
